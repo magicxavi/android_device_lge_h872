@@ -2,7 +2,6 @@
 vendor/firmware/BCM4359C0_003.001.006.0093.0142:vendor/firmware/BCM4359C0.hcd
 
 # WiFi
-vendor/firmware/fw_bcmdhd.bin
-vendor/firmware/fw_bcmdhd_apsta.bin
-vendor/firmware/fw_bcmdhd_mfg.bin
+vendor/etc/firmware/fw_bcmdhd.bin
+vendor/etc/firmware/fw_bcmdhd_apsta.bin
 vendor/etc/wifi/4359_lg.clm_blob
