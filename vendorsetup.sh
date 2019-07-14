@@ -1,2 +1,2 @@
-add_lunch_combo aoscp_h872-userdebug
-add_lunch_combo aoscp_h872-eng 
+add_lunch_combo bootleg_h872-userdebug
+add_lunch_combo bootleg_h872-eng 

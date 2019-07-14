@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_h872.mk
+    $(LOCAL_DIR)/bootleg_h872.mk
