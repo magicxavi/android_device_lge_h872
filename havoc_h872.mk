@@ -19,10 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from h872 device
 $(call inherit-product, device/lge/h872/device.mk)
+
+# Security patch level
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2018-10-01
+	
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h872
@@ -35,6 +40,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lucye" \
     PRODUCT_DEVICE="lucye" \
     PRODUCT_NAME="lucye_tmo_us" \
-    PRIVATE_BUILD_DESC="lucye_tmo_us-user 8.0.0 OPR1.170623.032 1816311068e15 release-keys"
+    PRIVATE_BUILD_DESC="lucye_tmo_us-user 8.0.0 OPR1.170623.032 182841114a294 release-keys"
 
-BUILD_FINGERPRINT := "lge/lucye_tmo_us/lucye:8.0.0/OPR1.170623.032/1816311068e15:user/release-keys"
+BUILD_FINGERPRINT := "lge/lucye_tmo_us/lucye:8.0.0/OPR1.170623.032/182841114a294:user/release-keys"

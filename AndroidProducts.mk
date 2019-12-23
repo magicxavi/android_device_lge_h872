@@ -15,3 +15,9 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/havoc_h872.mk
+
+	
+COMMON_LUNCH_CHOICES := \
+    havoc_h872-user \
+    havoc_h872-userdebug \
+    havoc_h872-eng
