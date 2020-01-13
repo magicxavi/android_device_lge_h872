@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common BlissOS stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit from h872 device
 $(call inherit-product, device/lge/h872/device.mk)
@@ -31,7 +31,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h872
-PRODUCT_NAME := lineage_h872
+PRODUCT_NAME := bliss_h872
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H872
 PRODUCT_MANUFACTURER := LGE
@@ -43,3 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lucye_tmo_us-user 8.0.0 OPR1.170623.032 182841114a294 release-keys"
 
 BUILD_FINGERPRINT := "lge/lucye_tmo_us/lucye:8.0.0/OPR1.170623.032/182841114a294:user/release-keys"
+
+export BLISS_BUILDTYPE=OFFICIAL
+export BLISS_DEVELOPER=Magicxavi
+
